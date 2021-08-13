@@ -1,1 +1,112 @@
+.title1 {
+    border: 1px solid black;
+    background-color: pink;
+    font-weight: bold;
+    padding: 0.313rem;
+    width: 9.375rem;
+    text-align: center;
+  }
 
+  .title2 {
+    border: 1px solid black;
+    background-color: red;
+    font-weight: bold;
+    padding: 0.313rem;
+    width: 9.375rem;
+    color: white;
+    text-align: center;
+  }
+
+  .title3 {
+    border: 1px solid black;
+    background-color: orange;
+    font-weight: bold;
+    padding: 0.313rem;
+    width: 9.375rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 25rem;
+    height: 13.5rem;
+    border: 3px solid black;
+    background-color: gray;
+    font-family: cursive;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .tablet-view {
+      margin-top: 2rem;
+      flex-grow: 2;
+    }
+
+    .chicken {
+      width: 40%;
+    }
+
+    .beef {
+      width: 40%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-left: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-left: 2rem;
+    }
+  }
+
+  .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+  }
